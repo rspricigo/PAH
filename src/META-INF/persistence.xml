@@ -5,7 +5,8 @@
 		transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+           
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL6InnoDBDialect" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pahdb" />
             <property name="javax.persistence.jdbc.user" value="pahuser" />
@@ -18,6 +19,7 @@
             <property name="hibernate.hibernate.cache.use_query_cache"
                 value="true" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="serverTimezone" value="UTC"/>
         </properties>
 	
 	</persistence-unit>
